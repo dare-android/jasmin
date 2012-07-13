@@ -109,6 +109,7 @@
            	
         <jar destfile="${release.loc}/jasminclasses-${jasmin.version}.jar" manifest="META-INF/MANIFEST.MF">
             <fileset dir="classes"/>
+            <zipfileset src="${java_cup.jar}"/>
         </jar>
 		<delete dir="META-INF"/>
     </target>
